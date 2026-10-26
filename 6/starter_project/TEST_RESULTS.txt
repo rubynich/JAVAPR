@@ -1,0 +1,12 @@
+PASS: обычная заявка -> STANDARD
+PASS: срочная ниже 175000 -> FAST_TRACK
+PASS: срочная ровно 175000 -> STANDARD
+PASS: сумма 499999 -> STANDARD
+PASS: сумма 500000 -> FINANCE_REVIEW
+PASS: сумма 500001 -> FINANCE_REVIEW
+PASS: персональные данные важнее срочности -> SECURITY_REVIEW
+PASS: высокий риск -> DIRECTOR_REVIEW
+PASS: персональные данные важнее высокого риска -> SECURITY_REVIEW
+PASS: отрицательная сумма -> контролируемая ошибка
+PASS: не задан риск -> контролируемая ошибка
+Итог: 11 пройдено, 0 ошибок.
